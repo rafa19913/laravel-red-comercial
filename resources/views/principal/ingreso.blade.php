@@ -18,40 +18,10 @@
         
         <!-- Template CSS Files
         ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="plugins/animate-css/animate.css">
-        <!-- Hero area slider css-->
-        <link rel="stylesheet" href="plugins/slider/slider.css">
-        <!-- slick slider -->
-        <link rel="stylesheet" href="plugins/slick/slick.css">
-        <!-- Fancybox -->
-        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
-        <!-- hover -->
-        <link rel="stylesheet" href="plugins/hover/hover-min.css">
-        <!-- template main css file -->
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 
-
-<!--===============================================================================================-->	
-<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/app.css">
 
     </head>
     <body>
@@ -145,13 +115,6 @@
                                 nombre de usuario o contraseña?
                             </a>
                         </div>
-    
-                        <div class="text-center p-t-136">
-                            <a class="txt2" href="#">
-                                Registrarme
-                                <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-                            </a>
-                        </div>
                     </form>
                 </div>
             </div>
@@ -164,84 +127,18 @@
 </section>
 
 
-      
 
-            <!--
-            ==================================================
-            Footer Section Start
-            ================================================== -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="row content-justify-between">
-                      
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <!-- Social Media -->
-                            <ul class="social text-center text-md-right text-lg-right">
-                                <li>
-                                    <a href="http://wwww.fb.com/themefisher" class="Facebook">
-                                        <i class="ion-social-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://wwww.twitter.com/themefisher" class="Twitter">
-                                        <i class="ion-social-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Linkedin">
-                                        <i class="ion-social-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://wwww.fb.com/themefisher" class="Google Plus">
-                                        <i class="ion-social-googleplus"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer> <!-- /#footer -->
 
-	<!-- Template Javascript Files
-	================================================== -->
 	<!-- jquery -->
-	<script src="plugins/jQurey/jquery.min.js"></script>
-	<!-- Form Validation -->
-    <script src="plugins/form-validation/jquery.form.js"></script> 
-    <script src="plugins/form-validation/jquery.validate.min.js"></script>
-	<!-- slick slider -->
-	<script src="plugins/slick/slick.min.js"></script>
-	<!-- bootstrap js -->
-	<script src="plugins/bootstrap/bootstrap.min.js"></script>
-	<!-- wow js -->
-	<script src="plugins/wow-js/wow.min.js"></script>
-	<!-- slider js -->
-	<script src="plugins/slider/slider.js"></script>
-	<!-- Fancybox -->
-	<script src="plugins/facncybox/jquery.fancybox.js"></script>
-	<!-- template main js -->
-    <script src="js/main.js"></script>
-    
+    <script src="js/app.js"></script>
+    <script src="js/all.js"></script>
+	
 
-    	
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-        <script src="vendor/bootstrap/js/popper.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-        <script src="vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-        <script src="vendor/tilt/tilt.jquery.min.js"></script>
-        <script >
+        <script>
             $('.js-tilt').tilt({
                 scale: 1.1
             })
         </script>
-    <!--===============================================================================================-->
-        <script src="js/main.js"></script>
     
  	</body>
 </html>

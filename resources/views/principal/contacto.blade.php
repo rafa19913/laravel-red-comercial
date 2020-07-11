@@ -19,32 +19,18 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        
-        <!-- Template CSS Files
-        ================================================== -->
-        <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-        <!-- Ionicons Fonts Css -->
-        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
-        <!-- animate css -->
-        <link rel="stylesheet" href="plugins/animate-css/animate.css">
-        <!-- Hero area slider css-->
-        <link rel="stylesheet" href="plugins/slider/slider.css">
-        <!-- slick slider -->
-        <link rel="stylesheet" href="plugins/slick/slick.css">
-        <!-- Fancybox -->
-        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
-        <!-- hover -->
-        <link rel="stylesheet" href="plugins/hover/hover-min.css">
-        <!-- template main css file -->
-        <link rel="stylesheet" href="css/style.css">
+   
+
+        <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/app.css">
+
+
     </head>
     <body>
 
-<!--
-        ==================================================
+<!--==================================================
         Header Section Start
-        ================================================== -->
+==================================================-->
 <section class="top-bar animated-header">
     <div class="container">
         <div class="row">
@@ -117,64 +103,13 @@
                 </div>
             </section>
 
-            <!--
-            ==================================================
-            Footer Section Start
-            ================================================== -->
-            <footer id="footer">
-                <div class="container">
-                    <div class="row content-justify-between">
-                        <div class="col-md-8 col-12 text-center text-lg-left text-md-left">
-                       
-                        </div>
-                        <div class="col-md-4 col-12">
-                            <!-- Social Media -->
-                            <ul class="social text-center text-md-right text-lg-right">
-                                <li>
-                                    <a  class="Facebook">
-                                        <i class="ion-social-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="Twitter">
-                                        <i class="ion-social-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="Linkedin">
-                                        <i class="ion-social-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="Google Plus">
-                                        <i class="ion-social-googleplus"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer> <!-- /#footer -->
-
-	<!-- Template Javascript Files
-	================================================== -->
+        
 	<!-- jquery -->
-	<script src="plugins/jQurey/jquery.min.js"></script>
-	<!-- Form Validation -->
-    <script src="plugins/form-validation/jquery.form.js"></script> 
-    <script src="plugins/form-validation/jquery.validate.min.js"></script>
-	<!-- slick slider -->
-	<script src="plugins/slick/slick.min.js"></script>
-	<!-- bootstrap js -->
-	<script src="plugins/bootstrap/bootstrap.min.js"></script>
-	<!-- wow js -->
-	<script src="plugins/wow-js/wow.min.js"></script>
-	<!-- slider js -->
-	<script src="plugins/slider/slider.js"></script>
-	<!-- Fancybox -->
-	<script src="plugins/facncybox/jquery.fancybox.js"></script>
-	<!-- template main js -->
-	<script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/all.js"></script>
+
+
+
  	</body>
 </html>
 
