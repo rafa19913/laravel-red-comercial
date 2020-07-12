@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <!-- Basic Page Needs
-        ================================================== -->
+
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" href="favicon.ico">
@@ -10,8 +9,8 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
-        <!-- Mobile Specific Metas
-        ================================================== -->
+
+
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,16 +26,10 @@
         <link rel="stylesheet" href="plugins/hover/hover-min.css">
         <link rel="stylesheet" href="css/style.css">
         
-
-        
-
     </head>
-    <body>
 
-<!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
+
+<body>
 
 
 <div id="app">
@@ -55,19 +48,17 @@
 
 <!-- Se manda llamar contenido (index.blade.php) -->
      @yield('contenido') 
+</div>
+
+    <!-- Footer basico con logos en componente  -->
+    <footer-component-principal></footer-component-principal> 
+
 
 </div>
 
-    <footer-component-principal> </footer-component-principal> 
 
-</div>
-
-	<!-- Template Javascript Files
-	================================================== -->
-	<!-- jquery -->
 	<script src="plugins/jQurey/jquery.min.js"></script>	
 	<script src="plugins/slider/slider.js"></script>
-
 	<script src="plugins/jQurey/jquery.min.js"></script>
     <script src="plugins/form-validation/jquery.validate.min.js"></script>
 	<script src="plugins/facncybox/jquery.fancybox.js"></script>
@@ -75,11 +66,11 @@
     <script src="vendor/tilt/tilt.jquery.min.js"></script>
 
 
-        <script>
-            $('.js-tilt').tilt({
-                scale: 1.1
-            })
-        </script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
     
     <script src="js/app.js"></script>
     

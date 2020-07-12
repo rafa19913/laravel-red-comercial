@@ -36,3 +36,5 @@ Vue.component('header-component-principal', require('./components/HeaderComponen
 const app = new Vue({
     el: '#app',
 });
+
+

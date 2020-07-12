@@ -16,17 +16,22 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Home
-                                    <span class="sr-only">(current)</span>
-                                </a>
+                                <button>
+                                    <a class="nav-link" href="/">Home
+                                        <span class="sr-only">(current)</span>
+                                    </a>
+                                </button>
                             </li>
                             <li class="nav-item">
+                                   <button>
                                 <a class="nav-link" data-toggle="modal" data-target="#modalIngresar">Ingresar</a>
+                                </button>
                             </li>
                             <li class="nav-item">
+                                   <button>
                                 <a class="nav-link" data-toggle="modal" data-target="#modalRegistrarme">Registrarme</a>
+                               </button>
                             </li>
-                          
                         </ul>
                     </div>
                 </nav>
@@ -39,7 +44,7 @@
 <script>
 export default {
      mounted() {
-            console.log('Buscador y mapa Component mounted.')
+            console.log('Header Component mounted.')
     }
 }
 </script>

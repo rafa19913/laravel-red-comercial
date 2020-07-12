@@ -2056,6 +2056,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
     console.log('Buscador y mapa Component mounted.');
@@ -38045,46 +38051,52 @@ var staticRenderFns = [
                   [
                     _c("ul", { staticClass: "navbar-nav ml-auto" }, [
                       _c("li", { staticClass: "nav-item" }, [
-                        _c(
-                          "a",
-                          { staticClass: "nav-link", attrs: { href: "/" } },
-                          [
-                            _vm._v(
-                              "Home\r\n                                    "
-                            ),
-                            _c("span", { staticClass: "sr-only" }, [
-                              _vm._v("(current)")
-                            ])
-                          ]
-                        )
+                        _c("button", [
+                          _c(
+                            "a",
+                            { staticClass: "nav-link", attrs: { href: "/" } },
+                            [
+                              _vm._v(
+                                "Home\r\n                                        "
+                              ),
+                              _c("span", { staticClass: "sr-only" }, [
+                                _vm._v("(current)")
+                              ])
+                            ]
+                          )
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("li", { staticClass: "nav-item" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: {
-                              "data-toggle": "modal",
-                              "data-target": "#modalIngresar"
-                            }
-                          },
-                          [_vm._v("Ingresar")]
-                        )
+                        _c("button", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                "data-toggle": "modal",
+                                "data-target": "#modalIngresar"
+                              }
+                            },
+                            [_vm._v("Ingresar")]
+                          )
+                        ])
                       ]),
                       _vm._v(" "),
                       _c("li", { staticClass: "nav-item" }, [
-                        _c(
-                          "a",
-                          {
-                            staticClass: "nav-link",
-                            attrs: {
-                              "data-toggle": "modal",
-                              "data-target": "#modalRegistrarme"
-                            }
-                          },
-                          [_vm._v("Registrarme")]
-                        )
+                        _c("button", [
+                          _c(
+                            "a",
+                            {
+                              staticClass: "nav-link",
+                              attrs: {
+                                "data-toggle": "modal",
+                                "data-target": "#modalRegistrarme"
+                              }
+                            },
+                            [_vm._v("Registrarme")]
+                          )
+                        ])
                       ])
                     ])
                   ]
