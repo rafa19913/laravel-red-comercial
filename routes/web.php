@@ -31,6 +31,10 @@ Route::get('/contacto', function () {
     return view('principal.contacto');
 });
 
+Route::get('/exampleComponent', function () {
+    return view('principal.layout');
+});
+
 
 
 
