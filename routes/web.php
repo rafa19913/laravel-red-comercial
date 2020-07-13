@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', function () {
-    return view('empresario.index');
+    return view('administrador.index');
 });
 
 Route::resource('usuarios','UsuarioController');

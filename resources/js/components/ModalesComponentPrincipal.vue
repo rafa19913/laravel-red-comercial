@@ -51,7 +51,7 @@
                                 nombre de usuario o contraseña?
                             </a>
                         </div>
-                   </div>
+                     </div>
                         </div>
                   
                     </div>
@@ -160,8 +160,8 @@
                 //let url = '/api/ingresoUsuario' //Ruta hecha en api.php (routes)
 
                 if (this.email == "admin@gmail.com"){
-                    alert('Correo correcto');
-                    window.location = "/api/ejemploUsuario"
+                    //alert('Correo correcto');
+                    window.location = "/admin"
                    //this.$router
                    //this.$router.push('Home') 
                 }else{

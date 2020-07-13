@@ -2239,8 +2239,8 @@ __webpack_require__.r(__webpack_exports__);
       //alert("Ingreso de usuario" + this.email + this.password);
       //let url = '/api/ingresoUsuario' //Ruta hecha en api.php (routes)
       if (this.email == "admin@gmail.com") {
-        alert('Correo correcto');
-        window.location = "/api/ejemploUsuario"; //this.$router
+        //alert('Correo correcto');
+        window.location = "/admin"; //this.$router
         //this.$router.push('Home') 
       } else {
         alert('Correo incorrecto');
