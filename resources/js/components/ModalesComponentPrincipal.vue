@@ -4,8 +4,7 @@
 
 
     <div class="modale">
- 
-   <!--Inicio del modal agregar/actualizar-->
+   <!--Inicio del modal ingresar -->
           <div class="modal fade" id="modalIngresar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
                 <div class="modal-dialog modal-primary modal-lg" role="document">
                     <div class="modal-content">
@@ -19,11 +18,11 @@
                     <div class="login100-pic js-tilt" data-tilt>
                         <img src="images/img-01.png" alt="IMG">
                     </div>
-                        <form class="login100-form validate-form">
-                     
-    
+                       
+                     <div class="login100-form validate-form">
+
                         <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                            <input class="input100" type="text" name="email" placeholder="Email">
+                            <input v-model="email" class="input100" type="text" name="email" placeholder="Email">
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -31,7 +30,7 @@
                         </div>
     
                         <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                            <input class="input100" type="password" name="pass" placeholder="Password">
+                            <input v-model="password" class="input100" type="password" name="pass" placeholder="Password">
                             <span class="focus-input100"></span>
                             <span class="symbol-input100">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
@@ -39,7 +38,7 @@
                         </div>
                         
                         <div class="container-login100-form-btn">
-                            <button class="login100-form-btn">
+                            <button class="login100-form-btn" data-dismiss="modal" v-on:click="ingresar">
                                 Aceptar
                             </button>
                         </div>
@@ -52,7 +51,7 @@
                                 nombre de usuario o contraseña?
                             </a>
                         </div>
-                    </form>
+                   </div>
                         </div>
                   
                     </div>
@@ -144,10 +143,63 @@
 
 
 <script>
-export default {
-    mounted() {
-        console.log('Component modales principal.')
+
+    export default {
+        mounted() {
+            console.log('Componente Modales montado');
+        },
+        data(){
+            return{
+                email:"", // esta en el input como "v-mode=nombre"
+                password:"", // esta en el input como "v-mode=descripcion"
+            }
+        },  
+        methods:{
+            ingresar(){
+                //alert("Ingreso de usuario" + this.email + this.password);
+                //let url = '/api/ingresoUsuario' //Ruta hecha en api.php (routes)
+
+                if (this.email == "admin@gmail.com"){
+                    alert('Correo correcto');
+                    window.location = "/admin"
+                   //this.$router
+                   //this.$router.push('Home') 
+                }else{
+                    alert('Correo incorrecto');
+                }
+
+                /*axios.get(url,{ //nombres y descripción se envian para que crear el nuevo producto
+                    'email':this.email,
+                    'password':this.password,
+                    
+                }).then(function(response){
+                    if (this.email == 'admin@gmail.com'){
+                        alert('correcto');
+                        //alert('llego al alert de response true');
+                    }else{
+                        alert('incorrecto');
+                        //alert('llego al alert de response false ');
+                    }
+                 
+                    
+                    // if (response.){
+                    //     alert("Response is true"); 
+                    // }else{
+                    //     alert("Response is false"); 
+                    // }
+                    //document.getElementById('btnCerrar').click(); // Cierra el modal
+                })
+                .catch(function (error) {
+                    console.log(error);
+                }); 
+                */ 
+
+
+            },
+        }
+
     }
-}
+
+
 </script>
 

@@ -2061,10 +2061,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Buscador y mapa Component mounted.');
+    console.log('Header Component mounted.');
   }
 });
 
@@ -2223,10 +2222,56 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    console.log('Component modales principal.');
+    console.log('Componente Modales montado');
+  },
+  data: function data() {
+    return {
+      email: "",
+      // esta en el input como "v-mode=nombre"
+      password: "" // esta en el input como "v-mode=descripcion"
+
+    };
+  },
+  methods: {
+    ingresar: function ingresar() {
+      //alert("Ingreso de usuario" + this.email + this.password);
+      //let url = '/api/ingresoUsuario' //Ruta hecha en api.php (routes)
+      if (this.email == "admin@gmail.com") {
+        alert('Correo correcto');
+        window.location = "/admin"; //this.$router
+        //this.$router.push('Home') 
+      } else {
+        alert('Correo incorrecto');
+      }
+      /*axios.get(url,{ //nombres y descripción se envian para que crear el nuevo producto
+          'email':this.email,
+          'password':this.password,
+          
+      }).then(function(response){
+          if (this.email == 'admin@gmail.com'){
+              alert('correcto');
+              //alert('llego al alert de response true');
+          }else{
+              alert('incorrecto');
+              //alert('llego al alert de response false ');
+          }
+       
+          
+          // if (response.){
+          //     alert("Response is true"); 
+          // }else{
+          //     alert("Response is false"); 
+          // }
+          //document.getElementById('btnCerrar').click(); // Cierra el modal
+      })
+      .catch(function (error) {
+          console.log(error);
+      }); 
+      */
+
+    }
   }
 });
 
@@ -38130,294 +38175,315 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "modale" }, [
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        staticStyle: { display: "none" },
+        attrs: {
+          id: "modalIngresar",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "myModalLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "modal-dialog modal-primary modal-lg",
+            attrs: { role: "document" }
+          },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "modal-body",
+                  staticStyle: { "margin-left": "250px" }
+                },
+                [
+                  _vm._m(1),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "login100-form validate-form" }, [
+                    _c(
+                      "div",
+                      {
+                        staticClass: "wrap-input100 validate-input",
+                        attrs: {
+                          "data-validate": "Valid email is required: ex@abc.xyz"
+                        }
+                      },
+                      [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.email,
+                              expression: "email"
+                            }
+                          ],
+                          staticClass: "input100",
+                          attrs: {
+                            type: "text",
+                            name: "email",
+                            placeholder: "Email"
+                          },
+                          domProps: { value: _vm.email },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.email = $event.target.value
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "focus-input100" }),
+                        _vm._v(" "),
+                        _vm._m(2)
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "wrap-input100 validate-input",
+                        attrs: { "data-validate": "Password is required" }
+                      },
+                      [
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.password,
+                              expression: "password"
+                            }
+                          ],
+                          staticClass: "input100",
+                          attrs: {
+                            type: "password",
+                            name: "pass",
+                            placeholder: "Password"
+                          },
+                          domProps: { value: _vm.password },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.password = $event.target.value
+                            }
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "focus-input100" }),
+                        _vm._v(" "),
+                        _vm._m(3)
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "container-login100-form-btn" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass: "login100-form-btn",
+                          attrs: { "data-dismiss": "modal" },
+                          on: { click: _vm.ingresar }
+                        },
+                        [
+                          _vm._v(
+                            "\n                             Aceptar\n                         "
+                          )
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _vm._m(4)
+                  ])
+                ]
+              )
+            ])
+          ]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _vm._m(5)
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modale" }, [
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h4", { staticClass: "modal-title" }, [_vm._v("Ingresar")]),
+      _vm._v(" "),
       _c(
-        "div",
+        "button",
         {
-          staticClass: "modal fade",
-          staticStyle: { display: "none" },
+          staticClass: "close",
           attrs: {
-            id: "modalIngresar",
-            tabindex: "-1",
-            role: "dialog",
-            "aria-labelledby": "myModalLabel",
-            "aria-hidden": "true"
+            type: "button",
+            "data-dismiss": "modal",
+            "aria-label": "Close"
           }
         },
-        [
-          _c(
-            "div",
-            {
-              staticClass: "modal-dialog modal-primary modal-lg",
-              attrs: { role: "document" }
-            },
-            [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c("h4", { staticClass: "modal-title" }, [
-                    _vm._v("Ingresar")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: {
-                        type: "button",
-                        "data-dismiss": "modal",
-                        "aria-label": "Close"
-                      }
-                    },
-                    [
-                      _c("span", { attrs: { "aria-hidden": "true" } }, [
-                        _vm._v("×")
-                      ])
-                    ]
-                  )
-                ]),
+        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "login100-pic js-tilt", attrs: { "data-tilt": "" } },
+      [_c("img", { attrs: { src: "images/img-01.png", alt: "IMG" } })]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "symbol-input100" }, [
+      _c("i", {
+        staticClass: "fa fa-envelope",
+        attrs: { "aria-hidden": "true" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "symbol-input100" }, [
+      _c("i", { staticClass: "fa fa-lock", attrs: { "aria-hidden": "true" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "text-center p-t-12" }, [
+      _c("span", { staticClass: "txt1" }, [
+        _vm._v(
+          "\n                             No recuerda su\n                         "
+        )
+      ]),
+      _vm._v(" "),
+      _c("a", { staticClass: "txt2", attrs: { href: "#" } }, [
+        _vm._v(
+          "\n                             nombre de usuario o contraseña?\n                         "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        staticStyle: { display: "none" },
+        attrs: {
+          id: "modalRegistrarme",
+          tabindex: "-1",
+          role: "dialog",
+          "aria-labelledby": "myModalLabel",
+          "aria-hidden": "true"
+        }
+      },
+      [
+        _c(
+          "div",
+          {
+            staticClass: "modal-dialog modal-primary modal-lg",
+            attrs: { role: "document" }
+          },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h4", { staticClass: "modal-title" }, [_vm._v("Registro")]),
                 _vm._v(" "),
                 _c(
-                  "div",
+                  "button",
                   {
-                    staticClass: "modal-body",
-                    staticStyle: { "margin-left": "250px" }
+                    staticClass: "close",
+                    attrs: {
+                      type: "button",
+                      "data-dismiss": "modal",
+                      "aria-label": "Close"
+                    }
                   },
                   [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "login100-pic js-tilt",
-                        attrs: { "data-tilt": "" }
-                      },
-                      [
-                        _c("img", {
-                          attrs: { src: "images/img-01.png", alt: "IMG" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("form", { staticClass: "login100-form validate-form" }, [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "wrap-input100 validate-input",
-                          attrs: {
-                            "data-validate":
-                              "Valid email is required: ex@abc.xyz"
-                          }
-                        },
-                        [
-                          _c("input", {
-                            staticClass: "input100",
-                            attrs: {
-                              type: "text",
-                              name: "email",
-                              placeholder: "Email"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "focus-input100" }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "symbol-input100" }, [
-                            _c("i", {
-                              staticClass: "fa fa-envelope",
-                              attrs: { "aria-hidden": "true" }
-                            })
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "wrap-input100 validate-input",
-                          attrs: { "data-validate": "Password is required" }
-                        },
-                        [
-                          _c("input", {
-                            staticClass: "input100",
-                            attrs: {
-                              type: "password",
-                              name: "pass",
-                              placeholder: "Password"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "focus-input100" }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "symbol-input100" }, [
-                            _c("i", {
-                              staticClass: "fa fa-lock",
-                              attrs: { "aria-hidden": "true" }
-                            })
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "container-login100-form-btn" },
-                        [
-                          _c("button", { staticClass: "login100-form-btn" }, [
-                            _vm._v(
-                              "\n                             Aceptar\n                         "
-                            )
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("div", { staticClass: "text-center p-t-12" }, [
-                        _c("span", { staticClass: "txt1" }, [
-                          _vm._v(
-                            "\n                             No recuerda su\n                         "
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("a", { staticClass: "txt2", attrs: { href: "#" } }, [
-                          _vm._v(
-                            "\n                             nombre de usuario o contraseña?\n                         "
-                          )
-                        ])
-                      ])
+                    _c("span", { attrs: { "aria-hidden": "true" } }, [
+                      _vm._v("×")
                     ])
                   ]
                 )
-              ])
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "modal fade",
-          staticStyle: { display: "none" },
-          attrs: {
-            id: "modalRegistrarme",
-            tabindex: "-1",
-            role: "dialog",
-            "aria-labelledby": "myModalLabel",
-            "aria-hidden": "true"
-          }
-        },
-        [
-          _c(
-            "div",
-            {
-              staticClass: "modal-dialog modal-primary modal-lg",
-              attrs: { role: "document" }
-            },
-            [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c("h4", { staticClass: "modal-title" }, [
-                    _vm._v("Registro")
-                  ]),
-                  _vm._v(" "),
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "modal-body",
+                  staticStyle: { "margin-left": "200px" }
+                },
+                [
                   _c(
-                    "button",
+                    "div",
                     {
-                      staticClass: "close",
-                      attrs: {
-                        type: "button",
-                        "data-dismiss": "modal",
-                        "aria-label": "Close"
-                      }
+                      staticClass: "login100-pic js-tilt",
+                      attrs: { "data-tilt": "" }
                     },
                     [
-                      _c("span", { attrs: { "aria-hidden": "true" } }, [
-                        _vm._v("×")
-                      ])
+                      _c("img", {
+                        attrs: { src: "images/img-01.png", alt: "IMG" }
+                      })
                     ]
-                  )
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "modal-body",
-                    staticStyle: { "margin-left": "200px" }
-                  },
-                  [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "login100-pic js-tilt",
-                        attrs: { "data-tilt": "" }
-                      },
-                      [
-                        _c("img", {
-                          attrs: { src: "images/img-01.png", alt: "IMG" }
-                        })
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("form", { staticClass: "login100-form validate-form" }, [
-                      _c("div", { staticClass: "nombresYapellidos" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "wrap-input100 validate-input",
-                            attrs: { "data-validate": "Email invalido " }
-                          },
-                          [
-                            _c("input", {
-                              staticClass: "input100",
-                              staticStyle: { width: "200px" },
-                              attrs: {
-                                type: "text",
-                                name: "Nombres",
-                                placeholder: "Nombres"
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "focus-input100" }),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "symbol-input100" }, [
-                              _c("i", {
-                                staticClass: "fa fa-id-card-o",
-                                attrs: { "aria-hidden": "true" }
-                              })
-                            ])
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            staticClass: "wrap-input100 validate-input",
-                            attrs: { "data-validate": "Email invalido " }
-                          },
-                          [
-                            _c("input", {
-                              staticClass: "input100",
-                              staticStyle: { width: "200px" },
-                              attrs: {
-                                type: "text",
-                                name: "Apellidos",
-                                placeholder: "Apellidos"
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "focus-input100" }),
-                            _vm._v(" "),
-                            _c("span", { staticClass: "symbol-input100" }, [
-                              _c("i", {
-                                staticClass: "fa fa-id-card",
-                                attrs: { "aria-hidden": "true" }
-                              })
-                            ])
-                          ]
-                        )
-                      ]),
+                  ),
+                  _vm._v(" "),
+                  _c("form", { staticClass: "login100-form validate-form" }, [
+                    _c("div", { staticClass: "nombresYapellidos" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "wrap-input100 validate-input",
+                          attrs: { "data-validate": "Email invalido " }
+                        },
+                        [
+                          _c("input", {
+                            staticClass: "input100",
+                            staticStyle: { width: "200px" },
+                            attrs: {
+                              type: "text",
+                              name: "Nombres",
+                              placeholder: "Nombres"
+                            }
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "focus-input100" }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "symbol-input100" }, [
+                            _c("i", {
+                              staticClass: "fa fa-id-card-o",
+                              attrs: { "aria-hidden": "true" }
+                            })
+                          ])
+                        ]
+                      ),
                       _vm._v(" "),
                       _c(
                         "div",
@@ -38428,11 +38494,11 @@ var staticRenderFns = [
                         [
                           _c("input", {
                             staticClass: "input100",
-                            staticStyle: { width: "400px" },
+                            staticStyle: { width: "200px" },
                             attrs: {
                               type: "text",
-                              name: "email",
-                              placeholder: "Email"
+                              name: "Apellidos",
+                              placeholder: "Apellidos"
                             }
                           }),
                           _vm._v(" "),
@@ -38440,64 +38506,92 @@ var staticRenderFns = [
                           _vm._v(" "),
                           _c("span", { staticClass: "symbol-input100" }, [
                             _c("i", {
-                              staticClass: "fa fa-envelope",
+                              staticClass: "fa fa-id-card",
                               attrs: { "aria-hidden": "true" }
                             })
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "wrap-input100 validate-input",
-                          attrs: { "data-validate": "Password is required" }
-                        },
-                        [
-                          _c("input", {
-                            staticClass: "input100",
-                            staticStyle: { width: "400px" },
-                            attrs: {
-                              type: "password",
-                              name: "pass",
-                              placeholder: "Password"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "focus-input100" }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "symbol-input100" }, [
-                            _c("i", {
-                              staticClass: "fa fa-lock",
-                              attrs: { "aria-hidden": "true" }
-                            })
-                          ])
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "container-login100-form-btn",
-                          staticStyle: { "margin-left": "50px" }
-                        },
-                        [
-                          _c("button", { staticClass: "login100-form-btn" }, [
-                            _vm._v(
-                              "\n                             Registrarme\n                         "
-                            )
                           ])
                         ]
                       )
-                    ])
-                  ]
-                )
-              ])
-            ]
-          )
-        ]
-      )
-    ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "wrap-input100 validate-input",
+                        attrs: { "data-validate": "Email invalido " }
+                      },
+                      [
+                        _c("input", {
+                          staticClass: "input100",
+                          staticStyle: { width: "400px" },
+                          attrs: {
+                            type: "text",
+                            name: "email",
+                            placeholder: "Email"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "focus-input100" }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "symbol-input100" }, [
+                          _c("i", {
+                            staticClass: "fa fa-envelope",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "wrap-input100 validate-input",
+                        attrs: { "data-validate": "Password is required" }
+                      },
+                      [
+                        _c("input", {
+                          staticClass: "input100",
+                          staticStyle: { width: "400px" },
+                          attrs: {
+                            type: "password",
+                            name: "pass",
+                            placeholder: "Password"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "focus-input100" }),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "symbol-input100" }, [
+                          _c("i", {
+                            staticClass: "fa fa-lock",
+                            attrs: { "aria-hidden": "true" }
+                          })
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      {
+                        staticClass: "container-login100-form-btn",
+                        staticStyle: { "margin-left": "50px" }
+                      },
+                      [
+                        _c("button", { staticClass: "login100-form-btn" }, [
+                          _vm._v(
+                            "\n                             Registrarme\n                         "
+                          )
+                        ])
+                      ]
+                    )
+                  ])
+                ]
+              )
+            ])
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
