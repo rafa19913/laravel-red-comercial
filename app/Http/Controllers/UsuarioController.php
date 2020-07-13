@@ -14,6 +14,7 @@ class UsuarioController extends Controller{
      */
     public function index(Request $request)
     {
+        return view('empresario.index');
         //$email = $request->input('email');
         //console.log('Llego en ingreso');
         //echo ('Llego en ingreso');

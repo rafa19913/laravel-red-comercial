@@ -161,7 +161,7 @@
 
                 if (this.email == "admin@gmail.com"){
                     alert('Correo correcto');
-                    window.location = "/admin"
+                    window.location = "/api/ejemploUsuario"
                    //this.$router
                    //this.$router.push('Home') 
                 }else{

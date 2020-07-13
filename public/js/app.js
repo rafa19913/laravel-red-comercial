@@ -2240,7 +2240,7 @@ __webpack_require__.r(__webpack_exports__);
       //let url = '/api/ingresoUsuario' //Ruta hecha en api.php (routes)
       if (this.email == "admin@gmail.com") {
         alert('Correo correcto');
-        window.location = "/admin"; //this.$router
+        window.location = "/api/ejemploUsuario"; //this.$router
         //this.$router.push('Home') 
       } else {
         alert('Correo incorrecto');
