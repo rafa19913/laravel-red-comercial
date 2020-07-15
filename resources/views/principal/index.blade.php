@@ -4,13 +4,18 @@
 <!-- Extiende de principal que contiene (header, footer, etc) -->
 @extends('principal.layout')
 
+     
+
 @section('contenido')
+
     <!-- Se encuentran los modales para el ignreso (login) o registro de nuevo usuario -->
-    <!-- <modales-component-principal></modales-component-principal> -->
-
-
+    
+     <!-- <modales-component-principal post-route="{{ route('login') }}"></modales-component-principal>    -->
+   
+   
+ 
     <div class="modale">
-   <!--Inicio del modal ingresar -->
+   <!-- Inicio del modal ingresar -->
           <div class="modal fade" id="modalIngresar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
                 <div class="modal-dialog modal-primary modal-lg" role="document">
                     <div class="modal-content">
@@ -56,8 +61,6 @@
                         </div>
 
                     </form>
-                 
-
                         </div>
                   
                     </div>
@@ -69,9 +72,8 @@
 
 
 
-            
     <div class="modale">
-   <!--Inicio del modal ingresar -->
+  
           <div class="modal fade" id="modalRegistrarme" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
                 <div class="modal-dialog modal-primary modal-lg" role="document">
                     <div class="modal-content">
@@ -148,15 +150,15 @@
                             </div>
                         </div>
                     </form>
-                 
 
                         </div>
                   
                     </div>
-                    <!-- /.modal-content -->
+                    <!-- /.modal-content  -->
                 </div>
                 <!-- /.modal-dialog -->
             </div>
+
 
 
 @endsection
